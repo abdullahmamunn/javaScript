@@ -170,3 +170,17 @@ switch(color){
     console.log("None of this");
     break;
 }
+
+
+// Class OOP
+class calcSquare{
+   constructor(x) {
+     this.x = x
+   }
+   getSquare(){
+     return this.x * this.x
+   }
+
+}
+const ob1 = new calcSquare(4)
+console.log(ob1.getSquare());
