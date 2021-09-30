@@ -124,7 +124,7 @@ console.log(myName.split(''))
 console.log(myName.toUpperCase())
 const string = 'mamun'
 const age = 24.5
-const isMarid = false
+const isMarrid = false
 const notfaka = null
 const kichonai = undefined
 

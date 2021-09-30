@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    body{
+        margin-top: 50px;
+        background: #333;
+        color: rgb(212, 144, 144);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="row">
+            <h2 class="display-4 text-center">Weight Converter</h2>
+            <form action="">
+              <div class="form-group">
+                <input type="number" class="form-control" id="getWeight" placeholder="Enter pounds...">
+              </div>
+            </form>
+            <div id="output">
+              <div class="card bg-primary">
+                <div class="card-block">
+                  <h1>Kilograms</h1>
+                  <div id="outputKilos"></div>
+                </div>
+              </div>
+
+              <div class="card bg-success">
+                <div class="card-block">
+                  <h1>Grams</h1>
+                  <div id="outputGrams"></div>
+                </div>
+              </div>
+
+              <div class="card bg-danger">
+                <div class="card-block">
+                  <h1>Ounce</h1>
+                  <div id="outputOunce"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      var output = document.getElementById('output').style.visibility = 'hidden'
+      var getIbs = document.getElementById('getWeight')
+      getIbs.addEventListener('keyup',calculateWeight)
+      function calculateWeight(){
+        var output = document.getElementById('output').style.visibility = 'visible'
+        var getPounds = getIbs.value;
+        document.getElementById('outputKilos').innerHTML = getPounds/2.2046;
+        document.getElementById('outputGrams').innerHTML = getPounds*453.59237;
+        document.getElementById('outputOunce').innerHTML = getPounds/0.0625;
+        
+      }
+    </script>
+</body>
+</html>
