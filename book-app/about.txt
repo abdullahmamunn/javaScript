@@ -1,0 +1,7 @@
+_______________Its a simple JavaScript Book Application_______________
+Features
+1. Book add
+2. Book Delete
+3. Validation with Message 
+
+N.B: All credit goes to traversy media (Brad) <3

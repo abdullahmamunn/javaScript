@@ -40,10 +40,10 @@ var click = document.getElementById('click_btn')
 click.addEventListener('click',countDown)
 function countDown()
 {
-    document.getElementById('data').innerHTML = "Bangladesh Vs Oman";
+    document.getElementById('data').innerHTML = "HappY New Year 2022 will be start";
 }
 
-var countDownDate = new Date("Oct 19, 2021 20:00:00").getTime();
+var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
 var now = new Date().getTime();
 var distance = countDownDate - now;
 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
